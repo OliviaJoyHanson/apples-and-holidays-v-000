@@ -77,6 +77,7 @@ def all_holidays_with_bbq(holiday_hash)
 
 
   hash = holiday_hash.select{|season, holidays| holidays.values.flatten.include?("BBQ")}
+  binding.pry
   hash_values = hash.values
   holidays = []
   hash_values.each{|holiday, supplies_array| holidays << holiday}
