@@ -80,6 +80,6 @@ def all_holidays_with_bbq(holiday_hash)
   hash_values = hash.values
   holidays = []
   binding.pry
-  hash_values.each{|holiday, supplies_array| holidays << holiday}
+  hash_values.each{|hash| hash.each{|holiday, supplies_array| holidays << holiday}}
   holidays
 end
