@@ -81,8 +81,8 @@ def all_holidays_with_bbq(holiday_hash)
   #holidays = []
   #holidays = [hash[0][0], hash[1][0]
   binding.pry
-  hash_values.select do |hash|
-    hash.collect{|holiday, supplies_array| holiday}}
+  hash_values.collect do |hash|
+    hash.collect{|holiday, supplies_array| holiday}
   end
   #olidays
 end
