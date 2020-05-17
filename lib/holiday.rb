@@ -78,8 +78,8 @@ def all_holidays_with_bbq(holiday_hash)
 
   hash = holiday_hash.select{|season, holidays| holidays.values.flatten.include?("BBQ")}
   hash_values = hash.values
-  holidays = []
+  #holidays = []
   #binding.pry
-  hash_values.each{|hash| hash.each{|holiday, supplies_array| holidays << holiday}}
-  holidays
+  hash_values.select{|hash| hash.each{|holiday, supplies_array| holiday}}
+  #olidays
 end
