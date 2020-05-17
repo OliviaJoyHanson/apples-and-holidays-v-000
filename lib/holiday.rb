@@ -78,7 +78,7 @@ def all_holidays_with_bbq(holiday_hash)
 
   holiday_hash.select do |season, holidays|
     binding.pry
-    holidays.select{|holiday| holiday.values.include?("BBQ")}
+    holidays.values.flatten.include?("BBQ")}
   end
   if holiday.include?("BBQ")
     holiday_array << holiday
